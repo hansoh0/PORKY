@@ -9,7 +9,6 @@ Install requirements with pip
 
 ```
 pip install -r requirements.txt
-
 ```
 ## How to Use
 The script is best set up as a cron job on the specified server
