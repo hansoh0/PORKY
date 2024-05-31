@@ -37,4 +37,5 @@ SEC_KEY = "sk1_98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4"
 API_KEY = "pk1_98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4"  # Get bent, skiddies                                                                           
 ENDPOINT = "https://porkbun.com/api/json/v3/ssl/retrieve/yourdomain.com"      
 ```
+Still many things to iron-out so bare with me.
 Have fun ya animals
