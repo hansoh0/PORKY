@@ -122,4 +122,5 @@ def __main__():
     except Exception as e:                                                                                                                                                                                                                                      
         print(f'An error occured: {e}')                                                                                                                                                                                                                         
                                                                                                                                                                                                                                                                 
-if __name__ ==
+if __name__ == "__main__":
+   __main__()
