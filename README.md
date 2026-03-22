@@ -18,7 +18,7 @@ The script is best set up as a cron job on the specified server
 # OR
 0 1 * * * bash porky.sh
 ```
-Im too lazy to change this variable to be evironmentally set so change "DOMAIN_HERE" in line 121 to your domain. eg. example.com:
+Im too lazy to change this variable to be evironmentally set so change "DOMAIN_HERE" in porky.py line 121 to your domain. eg. example.com:
 ```
 check_ssl_certificate_expiry("example.com") 
 ```
