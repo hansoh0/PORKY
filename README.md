@@ -5,7 +5,7 @@ An automated SSL cert checker & downloader for porkbun websites @hansoh0 (https:
 
 ## Installation
 
-Install requirements with pip
+Install requirements with pip, not needed if running bash script
 
 ```
 pip install -r requirements.txt
@@ -15,12 +15,15 @@ The script is best set up as a cron job on the specified server
 ```
 # Run the script every day at 1 AM                                                                                                                                                                         
 0 1 * * * python3 /usr/src/app/porky.py >> /var/log/cron.log 2>&1
+# OR
+0 1 * * * bash porky.sh
 ```
 Im too lazy to change this variable to be evironmentally set so change "DOMAIN_HERE" in line 121 to your domain. eg. example.com:
 ```
 check_ssl_certificate_expiry("example.com") 
 ```
-All grabbed certs and keys can be found under $HOME/ssl/certs. eg. /home/hansoho/ssl/certs
+All grabbed certs and keys can be found under $HOME/ssl/certs. eg. /home/hansoho/ssl/certs.
+For the bash script this can and should be defined by you or the script will fail.
 ```
 [hansoho@theFalcon]:~/ssl/certs >> ls -la                                                                                                                                                            
 total 20                                                                                                                                                                                                   
@@ -37,5 +40,4 @@ SEC_KEY = "sk1_98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4"
 API_KEY = "pk1_98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4"  # Get bent, skiddies                                                                           
 ENDPOINT = "https://porkbun.com/api/json/v3/ssl/retrieve/yourdomain.com"      
 ```
-Still many things to iron-out so bare with me.
 Have fun ya animals
